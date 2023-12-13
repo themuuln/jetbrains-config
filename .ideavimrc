@@ -1,0 +1,54 @@
+let mapleader = " "
+
+set scrolloff=5
+
+imap jk <Esc>
+imap jj <Esc>
+set timeoutlen=500
+
+set visualbell
+set noerrorbells
+set ignorecase
+
+" Navigation
+nnoremap <C-\> :action SplitVertically<CR>
+nnoremap <C--> :action SplitHorizontally<CR>
+nnoremap <C-m> :action MoveEditorToOppositeTabGroup<CR>
+
+map Q gq
+
+set quickscope
+set incsearch
+set timeoutlen=500
+set clipboard+=unnamed
+
+
+set relativenumber
+set number
+
+Plug 'machakann/vim-highlightedyank'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'chrisbra/matchit'
+
+Plug 'preservim/nerdtree'
+imap <C-n> :NERDTree<CR>
+inoremap <C-n> <Esc>:NERDTree<CR>
+map <C-n> <Esc>:NERDTree<CR>
+
+Plug 'easymotion/vim-easymotion'
+map <leader>J <Plug>(easymotion-s)
+map <leader>j <Plug>(easymotion-f)
+
+Plug 'terryma/vim-multiple-cursors'
+
+map mc <A-n>
+map mx <A-x>
+map mp <A-p>
+
+" Navigation
+nnoremap <c-[> <c-w>h
+nnoremap <c-]> <c-w>l
+
+nnoremap <TAB> :action PreviousTab<CR>
+nnoremap <s-TAB> :action NextTab<CR>
