@@ -1,4 +1,4 @@
-### Using my ideavimrc
+### Using my ideavimrc (Run as Administrator)
 ```pwsh
 New-Item -ItemType SymbolicLink -Path $HOME\.ideavimrc -Target $HOME\dotfiles\.ideavimrc
 ```
