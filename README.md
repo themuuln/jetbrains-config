@@ -10,3 +10,5 @@ New-Item -ItemType SymbolicLink -Path $HOME\.ideavimrc -Target $HOME\dotfiles\.i
         |--- Manage IDE Settings
               |--- Import Settings # and select settings.zip to use my webstorm config
 ```
+
+to update .ideavimrc just pull from master branch using `git pull` command 
